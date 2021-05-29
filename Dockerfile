@@ -6,4 +6,4 @@ ENV FLASK_APP=main
 
 COPY main.py /data/main.py
 WORKDIR /data
-ENTRYPOINT ["flask","run"]
+ENTRYPOINT ["flask","run","--host=0.0.0.0"]
